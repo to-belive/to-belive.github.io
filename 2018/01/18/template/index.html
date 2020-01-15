@@ -1,0 +1,1408 @@
+<!DOCTYPE html>
+
+
+
+
+<html class="theme-next muse use-motion" lang="isdux">
+
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+<link href="/css/stylesheet.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+<link href="/lib/tobelive/loading.css?v=4.6.2" rel="stylesheet" type="text/css" />
+<link href="" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Technology,Template,tags1," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Life Story" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="A pearl is a temple built by pain around a grain of sand. How to study RS: 整理了一些学习推荐系统的相关文献和书籍资料。[主要语言] C++&#x2F;java">
+<meta name="keywords" content="Technology,Template,tags1">
+<meta property="og:type" content="article">
+<meta property="og:title" content="〆 template [important key]">
+<meta property="og:url" content="http:&#x2F;&#x2F;tobelive.com&#x2F;2018&#x2F;01&#x2F;18&#x2F;template&#x2F;index.html">
+<meta property="og:site_name" content="Life Story">
+<meta property="og:description" content="A pearl is a temple built by pain around a grain of sand. How to study RS: 整理了一些学习推荐系统的相关文献和书籍资料。[主要语言] C++&#x2F;java">
+<meta property="og:locale" content="isdux">
+<meta property="og:image" content="http:&#x2F;&#x2F;tobelive.com&#x2F;2018&#x2F;01&#x2F;18&#x2F;template&#x2F;avatar.jpg">
+<meta property="og:updated_time" content="2018-10-19T02:55:20.427Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;tobelive.com&#x2F;2018&#x2F;01&#x2F;18&#x2F;template&#x2F;avatar.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"always","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://tobelive.com/2018/01/18/template/"/>
+
+
+
+
+
+  <title>〆 template [important key] | Life Story</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="isdux">
+  
+  
+  
+  
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="container-solar">
+  <div class="solar">
+      <i class="mercury"></i>
+      <i class="venus"></i>
+      <i class="earth"></i>
+      <i class="mars"></i>
+      <i class="belt"></i>
+      <i class="jupiter"></i>
+      <i class="saturn"></i>
+      <i class="uranus"></i>
+      <i class="neptune"></i>
+  </div>
+</div>
+<div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="diy-brand" rel="start">
+        The To-Belive Blog
+      </a>
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Life Story</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-calendar-check-o"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-photos">
+          <a href="/gallery/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-photo"></i> <br />
+            
+            photos
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger" target="_self">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            Search
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="Searching..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+ </div>
+    </header>
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://tobelive.com/2018/01/18/template/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="小叔乔治">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/family/avatar520.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Life Story">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">〆 template [important key]</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-01-18T16:08:31+08:00">
+                2018-01-18
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Template/" itemprop="url" rel="index">
+                    <span itemprop="name">Template</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article&#58;</span>
+                
+                <span title="Words count in article">
+                   字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">
+                   分钟
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><strong><font color="#5A5AAD">A pearl is a temple built by pain around a grain of sand.</font></strong></p>
+<h2 id="How-to-study-RS-整理了一些学习推荐系统的相关文献和书籍资料。"><a href="#How-to-study-RS-整理了一些学习推荐系统的相关文献和书籍资料。" class="headerlink" title="How to study RS: 整理了一些学习推荐系统的相关文献和书籍资料。"></a><font color="#FF5151">How to study RS: </font>整理了一些学习推荐系统的相关文献和书籍资料。</h2><p><font style="color: #394F6A; font-size: 20px; font-family: '微软雅黑'">[主要语言] C++/java</font></p>
+<a id="more"></a>
+
+<h1 id="Ochuunn"><a href="#Ochuunn" class="headerlink" title="Ochuunn"></a>Ochuunn</h1><h2 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h2><ul>
+<li>文章界面很清晰，很适合阅读~</li>
+<li>Google Search Console</li>
+<li>Google Analytics</li>
+<li><a href="https://livere.com/" target="_blank" rel="noopener">LiveRe</a> (我去掉了disqus, 国内不翻墙压根连不上)</li>
+<li>打赏</li>
+<li>页面滚动快捷键 (j, k, t, b, n, m 具体功能自己尝试, console 有提示~)</li>
+</ul>
+<h2 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h2><p><a href="http://ochukai.me" target="_blank" rel="noopener">I am Oliver</a></p>
+<p><img src="avatar.jpg" alt="你想输入的替代文字"></p>
+<h1 id="⚠-这里很重要"><a href="#⚠-这里很重要" class="headerlink" title="⚠ 这里很重要"></a>⚠ 这里很重要</h1><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="SH"><figure class="iseeu highlight /sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-renderer-pug --save</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h2><ol>
+<li>In the <code>root</code> directory:</li>
+</ol>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAIN"><figure class="iseeu highlight /plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git clone https://github.com/ochukai/hexo-theme-ochuunn.git themes/ochuunn</span><br></pre></td></tr></table></figure></div>
+
+<ol start="2">
+<li>Change the <code>theme</code> property in the <code>config.yml</code> file.</li>
+</ol>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="YML"><figure class="iseeu highlight /yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># theme: landscape</span></span><br><span class="line"><span class="attr">theme:</span> <span class="string">ochuunn</span></span><br></pre></td></tr></table></figure></div>
+
+<h2 id="不足"><a href="#不足" class="headerlink" title="不足"></a>不足</h2><ul>
+<li>不支持 link 类型的文章</li>
+<li>不支持 category，只有 tag</li>
+</ul>
+<p>(在目录的最下面， 是 hexo 的测试文章，按 b 键直达~)</p>
+<p>.ignore<br>git提交时过滤掉不需要提交的文件，很方便，有些本地文件是不需要提交到Git上的。</p>
+<p>CamelCase<br>将不是驼峰格式的名称，快速转成驼峰格式，安装好后，选中要修改的名称，按快捷键shift+alt+u。</p>
+<p>Lombok plugin<br>开发神器，可以简化你的实体类，让你i不再写get/set方法，还能快速的实现builder模式，以及链式调用方法，总之就是为了简化实体类而生的插件。</p>
+<p>Mybatis plugin<br>可以在mapper接口中和mapper的xml文件中来回跳转，就想接口跳到实现类那样简单。</p>
+<p>codehelper.generator<br>可以让你在创建一个对象并赋值的时候，快速的生成代码，不需要一个一个属性的向里面set,根据new关键字，自动生成掉用set方法的代码，还可以一键填入默认值。</p>
+<p>GenAllSetter 特性</p>
+<p>在Java方法中, 根据 new 关键词, 为Java Bean 生成所有Setter方法。<br>按GenAllSetter键两次, 会为Setter方法生成默认值。<br>可在Intellij Idea中为GenAllSetter设置快捷键。<br>如何使用:<br>将光标移动到 new 语句的下一行。<br>点击主菜单Tools-&gt; Codehelper-&gt; GenAllSetter, 或者按下GenAllSetter快捷键。<br>GenDaoCode 特性</p>
+<p>根据Pojo 文件一键生成 Dao，Service，Xml，Sql文件。</p>
+<p>Pojo文件更新后一键更新对应的Sql和mybatis xml文件。</p>
+<p>提供insert，insertList，update，select，delete五种方法。</p>
+<p>能够批量生成多个Pojo的对应的文件。</p>
+<p>自动将pojo的注释添加到对应的Sql文件的注释内容部分中。</p>
+<p>丰富的配置，如果没有配置文件，则会使用默认配置。</p>
+<p>可以在Intellij Idea中快捷键配置中配置快捷键。</p>
+<p>目前支持MySQL + Java，后续会支持更多的DB。</p>
+<p>如果喜欢我们的插件，非常感谢您的分享。</p>
+<p>GenDaoCode 使用方法</p>
+<p>主菜单Tools-&gt; Codehelper-&gt; GenDaoCode 按键便可生成代码。</p>
+<p>方法一：点击GenDaoCode，然后根据提示框输入Pojo名字，多个Pojo以 | 分隔。</p>
+<p>Codehelper Generator会根据默认配置为您生成代码。</p>
+<p>方法二：在工程目录下添加文件名为codehelper.properties的文件。</p>
+<p>点击GenDaoCode，Codehelper Generator会根据您的配置文件为您生成代码</p>
+<p>LecturesCS10 : The Beauty and Joy of Computing - check the Distributed Computing (interesting) (<a href="http://inst.eecs.berkeley.edu/~cs10/sp11/)CS" target="_blank" rel="noopener">http://inst.eecs.berkeley.edu/~cs10/sp11/)CS</a> 162 Operating Systems and Systems Programming -section Networks and Distributed Systems (<a href="http://webcast.berkeley.edu/course_details.php?seriesid=1906978341)Google" target="_blank" rel="noopener">http://webcast.berkeley.edu/course_details.php?seriesid=1906978341)Google</a>: Cluster Computing and MapReduce (<a href="http://code.google.com/edu/submissions/mapreduce-minilecture/listing.html)Publications" target="_blank" rel="noopener">http://code.google.com/edu/submissions/mapreduce-minilecture/listing.html)Publications</a> CEPH (<a href="http://ceph.newdream.net/publications/)TheoryDistributed" target="_blank" rel="noopener">http://ceph.newdream.net/publications/)TheoryDistributed</a> systems principles and paradigms (<a href="http://rads.stackoverflow.com/amzn/click/0130888931)An" target="_blank" rel="noopener">http://rads.stackoverflow.com/amzn/click/0130888931)An</a> introduction to distributed algorithms By Valmir C. Barbosa (<a href="http://books.google.com/books?id=fPaGrO8KFqQC&amp;printsec=frontcover&amp;dq=ISBN%3a%200262024128&amp;source=bl&amp;ots=QpvNn0J_Or&amp;sig=np9ReVb48vsvTY0ZorrVNBpg_hI&amp;hl=en&amp;ei=r6WoTaHSLcn3rQfk_oioCA&amp;sa=X&amp;oi=book_result&amp;ct=result&amp;resnum=1&amp;ved=0CBMQ6AEwAA#v=onepage&amp;q&amp;f=false)Distributed" target="_blank" rel="noopener">http://books.google.com/books?id=fPaGrO8KFqQC&amp;printsec=frontcover&amp;dq=ISBN%3a%200262024128&amp;source=bl&amp;ots=QpvNn0J_Or&amp;sig=np9ReVb48vsvTY0ZorrVNBpg_hI&amp;hl=en&amp;ei=r6WoTaHSLcn3rQfk_oioCA&amp;sa=X&amp;oi=book_result&amp;ct=result&amp;resnum=1&amp;ved=0CBMQ6AEwAA#v=onepage&amp;q&amp;f=false)Distributed</a> Systems: An Algorithmic Approach (<a href="http://rads.stackoverflow.com/amzn/click/1584885645)Design" target="_blank" rel="noopener">http://rads.stackoverflow.com/amzn/click/1584885645)Design</a> and analysis of distributed algorithms By Nicola Santoro (<a href="http://books.google.com/books?id=iXlBscntcUgC&amp;printsec=frontcover&amp;dq=ISBN%200471719978&amp;source=bl&amp;ots=fXmWi9Ja-n&amp;sig=h7ew1WFPXjQSyznQUJZP4__9wbI&amp;hl=en&amp;ei=7KaoTZnBDo_MrQe8wYWoCA&amp;sa=X&amp;oi=book_result&amp;ct=result&amp;resnum=1&amp;ved=0CBMQ6AEwAA#v=onepage&amp;q&amp;f=false)Distributed" target="_blank" rel="noopener">http://books.google.com/books?id=iXlBscntcUgC&amp;printsec=frontcover&amp;dq=ISBN%200471719978&amp;source=bl&amp;ots=fXmWi9Ja-n&amp;sig=h7ew1WFPXjQSyznQUJZP4__9wbI&amp;hl=en&amp;ei=7KaoTZnBDo_MrQe8wYWoCA&amp;sa=X&amp;oi=book_result&amp;ct=result&amp;resnum=1&amp;ved=0CBMQ6AEwAA#v=onepage&amp;q&amp;f=false)Distributed</a> network systems: from concepts to implementations (<a href="http://books.google.com/books?id=_pYyEgj0fX8C&amp;printsec=frontcover&amp;dq=ISBN-10%3a%200387238395&amp;source=bl&amp;ots=fa1zPXorXp&amp;sig=1IDXLYBcVbPdsCeEbLRTTlomfpM&amp;hl=en&amp;ei=ZaWoTfrXB4eurAfDrJWnCA&amp;sa=X&amp;oi=book_result&amp;ct=result&amp;resnum=2&amp;ved=0CBwQ6AEwAQ#v=onepage&amp;q&amp;f=false)Distributed" target="_blank" rel="noopener">http://books.google.com/books?id=_pYyEgj0fX8C&amp;printsec=frontcover&amp;dq=ISBN-10%3a%200387238395&amp;source=bl&amp;ots=fa1zPXorXp&amp;sig=1IDXLYBcVbPdsCeEbLRTTlomfpM&amp;hl=en&amp;ei=ZaWoTfrXB4eurAfDrJWnCA&amp;sa=X&amp;oi=book_result&amp;ct=result&amp;resnum=2&amp;ved=0CBwQ6AEwAQ#v=onepage&amp;q&amp;f=false)Distributed</a> systems security: issues, processes, and solutions (<a href="http://books.google.com/books?id=ygWEYjk_rEUC&amp;printsec=frontcover&amp;dq=ISBN%3a%200470519886&amp;source=bl&amp;ots=xX09rNCXO-&amp;sig=JFKaStVHQgKrF-F7UP9m9WqZLMg&amp;hl=en&amp;ei=CKWoTcXLNYrXrQeg_oWoCA&amp;sa=X&amp;oi=book_result&amp;ct=result&amp;resnum=1&amp;ved=0CBMQ6AEwAA#v=onepage&amp;q&amp;f=false)Principles" target="_blank" rel="noopener">http://books.google.com/books?id=ygWEYjk_rEUC&amp;printsec=frontcover&amp;dq=ISBN%3a%200470519886&amp;source=bl&amp;ots=xX09rNCXO-&amp;sig=JFKaStVHQgKrF-F7UP9m9WqZLMg&amp;hl=en&amp;ei=CKWoTcXLNYrXrQeg_oWoCA&amp;sa=X&amp;oi=book_result&amp;ct=result&amp;resnum=1&amp;ved=0CBMQ6AEwAA#v=onepage&amp;q&amp;f=false)Principles</a> of Distributed Database Systems (<a href="http://books.google.com/books?id=TOBaLQMuNV4C&amp;printsec=frontcover&amp;dq=ISBN%3a%201441988335&amp;source=bl&amp;ots=LpxihM-W_9&amp;sig=qSwyqG9DrW8-EKJLG-ITaFNGIuQ&amp;hl=en&amp;ei=_6ioTa6UNsSsrAebwfmnCA&amp;sa=X&amp;oi=book_result&amp;ct=result&amp;resnum=1&amp;ved=0CBwQ6AEwAA#v=onepage&amp;q&amp;f=false)Pattern-Oriented" target="_blank" rel="noopener">http://books.google.com/books?id=TOBaLQMuNV4C&amp;printsec=frontcover&amp;dq=ISBN%3a%201441988335&amp;source=bl&amp;ots=LpxihM-W_9&amp;sig=qSwyqG9DrW8-EKJLG-ITaFNGIuQ&amp;hl=en&amp;ei=_6ioTa6UNsSsrAebwfmnCA&amp;sa=X&amp;oi=book_result&amp;ct=result&amp;resnum=1&amp;ved=0CBwQ6AEwAA#v=onepage&amp;q&amp;f=false)Pattern-Oriented</a> Software Architecture: A Pattern Language for Distributed (<a href="http://books.google.com/books?id=WVQF2PK2tlgC&amp;printsec=frontcover&amp;dq=ISBN%3a%200470059028&amp;source=bl&amp;ots=jTc3Ri_9cs&amp;sig=n1Ci_a2xMSPNobBx6cGCIhj1QrM&amp;hl=en&amp;ei=L6aoTeaSKNDIrQfOqOypCA&amp;sa=X&amp;oi=book_result&amp;ct=result&amp;resnum=1&amp;ved=0CBMQ6AEwAA#v=onepage&amp;q&amp;f=false)Distributed" target="_blank" rel="noopener">http://books.google.com/books?id=WVQF2PK2tlgC&amp;printsec=frontcover&amp;dq=ISBN%3a%200470059028&amp;source=bl&amp;ots=jTc3Ri_9cs&amp;sig=n1Ci_a2xMSPNobBx6cGCIhj1QrM&amp;hl=en&amp;ei=L6aoTeaSKNDIrQfOqOypCA&amp;sa=X&amp;oi=book_result&amp;ct=result&amp;resnum=1&amp;ved=0CBMQ6AEwAA#v=onepage&amp;q&amp;f=false)Distributed</a> and parallel systems: from cluster to grid computing (<a href="http://books.google.com/books?id=XKgwLhMZmKAC&amp;printsec=frontcover&amp;dq=ISBN%3a%200387698574&amp;source=bl&amp;ots=h87M4gQ3cz&amp;sig=X3ZlkzBYNIzWthyGCme4KIPLUgk&amp;hl=en&amp;ei=fKaoTf-jMcHWrQeSmJDyCA&amp;sa=X&amp;oi=book_result&amp;ct=result&amp;resnum=1&amp;ved=0CBcQ6AEwAA#v=onepage&amp;q&amp;f=false)Distributed" target="_blank" rel="noopener">http://books.google.com/books?id=XKgwLhMZmKAC&amp;printsec=frontcover&amp;dq=ISBN%3a%200387698574&amp;source=bl&amp;ots=h87M4gQ3cz&amp;sig=X3ZlkzBYNIzWthyGCme4KIPLUgk&amp;hl=en&amp;ei=fKaoTf-jMcHWrQeSmJDyCA&amp;sa=X&amp;oi=book_result&amp;ct=result&amp;resnum=1&amp;ved=0CBcQ6AEwAA#v=onepage&amp;q&amp;f=false)Distributed</a> Computing: Fundamentals, Simulations, and Advanced Topics (<a href="http://rads.stackoverflow.com/amzn/click/0471453242)Advanced" target="_blank" rel="noopener">http://rads.stackoverflow.com/amzn/click/0471453242)Advanced</a> distributed systems: third international school and …, Volume 3 (<a href="http://books.google.com/books?id=gLyeWkC-OQ4C&amp;printsec=frontcover&amp;dq=ISBN%3a%203540221727&amp;source=bl&amp;ots=W2uoBB4hPD&amp;sig=r4M7WwyM8C3-iektNV4I2oRk5Hw&amp;hl=en&amp;ei=tqSoTYPlB5GrrAei3ICoCA&amp;sa=X&amp;oi=book_result&amp;ct=result&amp;resnum=1&amp;ved=0CBMQ6AEwAA#v=onepage&amp;q&amp;f=false)Distributed" target="_blank" rel="noopener">http://books.google.com/books?id=gLyeWkC-OQ4C&amp;printsec=frontcover&amp;dq=ISBN%3a%203540221727&amp;source=bl&amp;ots=W2uoBB4hPD&amp;sig=r4M7WwyM8C3-iektNV4I2oRk5Hw&amp;hl=en&amp;ei=tqSoTYPlB5GrrAei3ICoCA&amp;sa=X&amp;oi=book_result&amp;ct=result&amp;resnum=1&amp;ved=0CBMQ6AEwAA#v=onepage&amp;q&amp;f=false)Distributed</a> data management for grid computing (<a href="http://books.google.com/books?id=biIxEDynbpMC&amp;printsec=frontcover&amp;dq=ISBN%3a%200471687197&amp;source=bl&amp;ots=oraHUvLUxK&amp;sig=93APYZC9T30jNpI2p5IbYrP8Zl4&amp;hl=en&amp;ei=bKeoTdfcD4PtrAfHzoinCA&amp;sa=X&amp;oi=book_result&amp;ct=result&amp;resnum=1&amp;ved=0CBMQ6AEwAA#v=onepage&amp;q&amp;f=false)Distributed" target="_blank" rel="noopener">http://books.google.com/books?id=biIxEDynbpMC&amp;printsec=frontcover&amp;dq=ISBN%3a%200471687197&amp;source=bl&amp;ots=oraHUvLUxK&amp;sig=93APYZC9T30jNpI2p5IbYrP8Zl4&amp;hl=en&amp;ei=bKeoTdfcD4PtrAfHzoinCA&amp;sa=X&amp;oi=book_result&amp;ct=result&amp;resnum=1&amp;ved=0CBMQ6AEwAA#v=onepage&amp;q&amp;f=false)Distributed</a> multimedia retrieval strategies for large scale networked systems (<a href="http://books.google.com/books?id=6NNtMkw3zKsC&amp;printsec=frontcover&amp;dq=ISBN%3a%200387288732&amp;source=bl&amp;ots=8y8olIZJx9&amp;sig=5FjhddaT_gkwf5VFEPDsG3Nxe_E&amp;hl=en&amp;ei=wKeoTefLCcq3rAeGqYWoCA&amp;sa=X&amp;oi=book_result&amp;ct=result&amp;resnum=1&amp;ved=0CBMQ6AEwAA#v=onepage&amp;q&amp;f=false)New" target="_blank" rel="noopener">http://books.google.com/books?id=6NNtMkw3zKsC&amp;printsec=frontcover&amp;dq=ISBN%3a%200387288732&amp;source=bl&amp;ots=8y8olIZJx9&amp;sig=5FjhddaT_gkwf5VFEPDsG3Nxe_E&amp;hl=en&amp;ei=wKeoTefLCcq3rAeGqYWoCA&amp;sa=X&amp;oi=book_result&amp;ct=result&amp;resnum=1&amp;ved=0CBMQ6AEwAA#v=onepage&amp;q&amp;f=false)New</a> horizons of parallel and distributed computing (<a href="http://books.google.com/books?id=32oUVpzVNBQC&amp;printsec=frontcover&amp;dq=ISBN%3a%200387244344&amp;source=bl&amp;ots=JY_TRyTmUt&amp;sig=8URoXyf5grzEfXm31LXvRL3Y0sM&amp;hl=en&amp;ei=5KeoTZmOBM7irAf5hPGnCA&amp;sa=X&amp;oi=book_result&amp;ct=result&amp;resnum=1&amp;ved=0CBMQ6AEwAA#v=onepage&amp;q&amp;f=false)Elements" target="_blank" rel="noopener">http://books.google.com/books?id=32oUVpzVNBQC&amp;printsec=frontcover&amp;dq=ISBN%3a%200387244344&amp;source=bl&amp;ots=JY_TRyTmUt&amp;sig=8URoXyf5grzEfXm31LXvRL3Y0sM&amp;hl=en&amp;ei=5KeoTZmOBM7irAf5hPGnCA&amp;sa=X&amp;oi=book_result&amp;ct=result&amp;resnum=1&amp;ved=0CBMQ6AEwAA#v=onepage&amp;q&amp;f=false)Elements</a> of distributed algorithms: modeling and analysis with Petri nets (<a href="http://books.google.com/books?id=I4Ft3T0jRfIC&amp;printsec=frontcover&amp;dq=ISBN%3a%203540627529&amp;source=bl&amp;ots=0ZQnwcegLO&amp;sig=CkljuyrkxDX-_jA2ijo7j6pGxZQ&amp;hl=en&amp;ei=eKioTfScI8ymrAe7yomoCA&amp;sa=X&amp;oi=book_result&amp;ct=result&amp;resnum=1&amp;ved=0CBcQ6AEwAA#v=onepage&amp;q&amp;f=false)ProgrammingParallel" target="_blank" rel="noopener">http://books.google.com/books?id=I4Ft3T0jRfIC&amp;printsec=frontcover&amp;dq=ISBN%3a%203540627529&amp;source=bl&amp;ots=0ZQnwcegLO&amp;sig=CkljuyrkxDX-_jA2ijo7j6pGxZQ&amp;hl=en&amp;ei=eKioTfScI8ymrAe7yomoCA&amp;sa=X&amp;oi=book_result&amp;ct=result&amp;resnum=1&amp;ved=0CBcQ6AEwAA#v=onepage&amp;q&amp;f=false)ProgrammingParallel</a> and Distributed Programming Using C++ (<a href="http://www.canadapost.ca/shopper/items/1006730/Parallel-and-Distributed-0321544676)Distributed" target="_blank" rel="noopener">http://www.canadapost.ca/shopper/items/1006730/Parallel-and-Distributed-0321544676)Distributed</a> .NET programming in C# (<a href="http://www.google.com/products/catalog?hl=en&amp;biw=1352&amp;bih=839&amp;q=ISBN%3a%201590590392&amp;um=1&amp;ie=UTF-8&amp;cid=6743176020645370485&amp;sa=X&amp;ei=6amoTc3qEMTVrQec4JGoCA&amp;ved=0CFkQ8wIwCg#)Java" target="_blank" rel="noopener">http://www.google.com/products/catalog?hl=en&amp;biw=1352&amp;bih=839&amp;q=ISBN%3a%201590590392&amp;um=1&amp;ie=UTF-8&amp;cid=6743176020645370485&amp;sa=X&amp;ei=6amoTc3qEMTVrQec4JGoCA&amp;ved=0CFkQ8wIwCg#)Java</a> network programming and distributed computing (<a href="http://books.google.com/books?id=vhwlwVVsUlgC&amp;printsec=frontcover&amp;dq=ISBN%3a%200201710374&amp;source=bl&amp;ots=UyX2BmUI0v&amp;sig=OzJrlo2iOnYNt0U7iYd2mo6b1kk&amp;hl=en&amp;ei=JaeoTZfaGonmrAf035SnCA&amp;sa=X&amp;oi=book_result&amp;ct=result&amp;resnum=1&amp;ved=0CBMQ6AEwAA#v=onepage&amp;q=ISBN%3a%200201710374&amp;f=false)Java" target="_blank" rel="noopener">http://books.google.com/books?id=vhwlwVVsUlgC&amp;printsec=frontcover&amp;dq=ISBN%3a%200201710374&amp;source=bl&amp;ots=UyX2BmUI0v&amp;sig=OzJrlo2iOnYNt0U7iYd2mo6b1kk&amp;hl=en&amp;ei=JaeoTZfaGonmrAf035SnCA&amp;sa=X&amp;oi=book_result&amp;ct=result&amp;resnum=1&amp;ved=0CBMQ6AEwAA#v=onepage&amp;q=ISBN%3a%200201710374&amp;f=false)Java</a> Distributed Computing (<a href="http://oreilly.com/catalog/9781565922068)Hadoop" target="_blank" rel="noopener">http://oreilly.com/catalog/9781565922068)Hadoop</a>: The Definitive Guide (<a href="http://oreilly.com/catalog/0636920010388/)Distributed" target="_blank" rel="noopener">http://oreilly.com/catalog/0636920010388/)Distributed</a> systems architecture: a middleware approach (<a href="http://books.google.com/books?id=BLx8408_s4cC&amp;printsec=frontcover&amp;dq=ISBN%201558606483&amp;source=bl&amp;ots=rI__pXaEXk&amp;sig=JyOtai5x8W5Ht-ZRZBn93usl39A&amp;hl=en&amp;ei=MamoTZXyCIPOrQe1_4mnCA&amp;sa=X&amp;oi=book_result&amp;ct=result&amp;resnum=1&amp;ved=0CBMQ6AEwAA#v=onepage&amp;q&amp;f=false)Tools" target="_blank" rel="noopener">http://books.google.com/books?id=BLx8408_s4cC&amp;printsec=frontcover&amp;dq=ISBN%201558606483&amp;source=bl&amp;ots=rI__pXaEXk&amp;sig=JyOtai5x8W5Ht-ZRZBn93usl39A&amp;hl=en&amp;ei=MamoTZXyCIPOrQe1_4mnCA&amp;sa=X&amp;oi=book_result&amp;ct=result&amp;resnum=1&amp;ved=0CBMQ6AEwAA#v=onepage&amp;q&amp;f=false)Tools</a> and environments for parallel and distributed computing (<a href="http://books.google.com/books?id=BLx8408_s4cC&amp;printsec=frontcover&amp;dq=ISBN%201558606483&amp;source=bl&amp;ots=rI__pXaEXk&amp;sig=JyOtai5x8W5Ht-ZRZBn93usl39A&amp;hl=en&amp;ei=MamoTZXyCIPOrQe1_4mnCA&amp;sa=X&amp;oi=book_result&amp;ct=result&amp;resnum=1&amp;ved=0CBMQ6AEwAA#v=onepage&amp;q&amp;f=false" target="_blank" rel="noopener">http://books.google.com/books?id=BLx8408_s4cC&amp;printsec=frontcover&amp;dq=ISBN%201558606483&amp;source=bl&amp;ots=rI__pXaEXk&amp;sig=JyOtai5x8W5Ht-ZRZBn93usl39A&amp;hl=en&amp;ei=MamoTZXyCIPOrQe1_4mnCA&amp;sa=X&amp;oi=book_result&amp;ct=result&amp;resnum=1&amp;ved=0CBMQ6AEwAA#v=onepage&amp;q&amp;f=false</a>)</p>
+<p>统计</p>
+<ol>
+<li>Frequentist StatisticsCasella, G. and Berger, R.L. (2001). “Statistical Inference” Duxbury Press.—Intermediate-level statistics book.Ferguson, T. (1996). “A Course in Large Sample Theory” Chapman &amp; Hall/CRC.—For a slightly more advanced book that’s quite clear on mathematical techniques.Lehmann, E. (2004). “Elements of Large-Sample Theory” Springer.—About asymptotics which is a good starting place.Vaart, A.W. van der (1998). “Asymptotic Statistics” Cambridge.—A book that shows how many ideas in inference (M estimation, the bootstrap, semiparametrics, etc) repose on top of empirical process theory.Tsybakov, Alexandre B. (2008) “Introduction to Nonparametric Estimation” Springer.—Tools for obtaining lower bounds on estimators.B. Efron (2010) “Large-Scale Inference: Empirical Bayes Methods for Estimation, Testing, and Prediction” Cambridge,.—A thought-provoking book.2. Bayesian StatisticsGelman, A. et al. (2003). “Bayesian Data Analysis” Chapman &amp; Hall/CRC.—About Bayesian.Robert, C. and Casella, G. (2005). “Monte Carlo Statistical Methods” Springer.—about Bayesian computation.3. Probability TheoryGrimmett, G. and Stirzaker, D. (2001). “Probability and Random Processes” Oxford.—Intermediate-level probability book.Pollard, D. (2001). “A User’s Guide to Measure Theoretic Probability” Cambridge.—More advanced level probability book.Durrett, R. (2005). “Probability: Theory and Examples” Duxbury.—Standard advanced probability book.4. OptimizationBertsimas, D. and Tsitsiklis, J. (1997). “Introduction to Linear Optimization” Athena.—A good starting book on linear optimization that will prepare you for convex optimization.Boyd, S. and Vandenberghe, L. (2004). “Convex Optimization” Cambridge.Y. Nesterov and Iu E. Nesterov (2003). “Introductory Lectures on Convex Optimization” Springer.—A start to understand lower bounds in optimization.5. Linear AlgebraGolub, G., and Van Loan, C. (1996). “Matrix Computations” Johns Hopkins.—Getting a full understanding of algorithmic linear algebra is also important.6. Information TheoryCover, T. and Thomas, J. “Elements of Information Theory” Wiley.—Classic information theory.7. Functional AnalysisKreyszig, E. (1989). “Introductory Functional Analysis with Applications” Wiley.—Functional analysis is essentially linear algebra in infinite dimensions, and it’s necessary for kernel methods, for nonparametric Bayesian methods, and for various other topics.</li>
+</ol>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+
+      
+      <div class="title-line" value="4">真孒今将命</div><br><div class="person"><br>    <div class="line0">此致: 敬礼!</div><br>    <div class="line1">送赵法师还蜀因名山奠简</div><br>    <div class="line2">作者: 李隆基</div><br>    <div class="line3">摘自: 《全唐诗》</div><br>    <div class="line4">道家奠灵简, 自昔仰神仙</div><br>    <div class="line5"><font color="red">真孒今将命</font>, 苍生福可传</div><br>    <div class="line6">江山寻故国, 城郭信依然</div><br>    <div class="line7">二室遥相望, 云回洞里天</div><br></div>
+       <div class="best-loves" style="color: steelblue;margin: 30px 0px;font-family: serif;font-size: 21px;">
+          座右铭: 进化是形成我们的身体形状和我们内在本能的主要力量, 他赋予我们大脑和学习机制，使我们可以根据经验实现自我更新。我们还需要终生学习，以改变我们的行为，从而适应包括进化论还不能预测的和可预测的各种环境。
+      </div>
+      <div class="best-loves" style="color: sienna;margin: 30px 0px;font-family: STLiti;font-size: 21px;">
+        Evolution is the major force that defines our bodily shape as well as our built-in instincts and reflexes. We also learn to change our behavior during our lifetime. This helps us cope with changes in the environment that cannot be predicted by evolution. Organisms that have a short life in a well-defined environment may have all their behavior built-in, but instead of hardwiring into us all sorts of behavior for any circumstance that we could encounter in our life, evolution gave us a large brain and a mechanism to learn, such that we could update ourselves with experience and adapt to different environments.
+      </div>
+        <div class="post-tags">
+          
+            <a href="/tags/Technology/" rel="tag"><i class="fa fa-tags"></i> Technology</a>
+            <script type="text/javascript">
+            var tagsall=document.getElementsByClassName("post-tags")
+            for (var i = tagsall.length - 1; i >= 0; i--){
+                var tags=tagsall[i].getElementsByTagName("a");
+                for (var j = tags.length - 1; j >= 0; j--) {
+                    var r=Math.floor(Math.random()*75+130);
+                    var g=Math.floor(Math.random()*75+100);
+                    var b=Math.floor(Math.random()*75+80);
+                    tags[j].style.background = "rgb("+r+","+g+","+b+")";
+                }
+            }
+            </script>
+          
+            <a href="/tags/Template/" rel="tag"><i class="fa fa-tags"></i> Template</a>
+            <script type="text/javascript">
+            var tagsall=document.getElementsByClassName("post-tags")
+            for (var i = tagsall.length - 1; i >= 0; i--){
+                var tags=tagsall[i].getElementsByTagName("a");
+                for (var j = tags.length - 1; j >= 0; j--) {
+                    var r=Math.floor(Math.random()*75+130);
+                    var g=Math.floor(Math.random()*75+100);
+                    var b=Math.floor(Math.random()*75+80);
+                    tags[j].style.background = "rgb("+r+","+g+","+b+")";
+                }
+            }
+            </script>
+          
+            <a href="/tags/tags1/" rel="tag"><i class="fa fa-tags"></i> tags1</a>
+            <script type="text/javascript">
+            var tagsall=document.getElementsByClassName("post-tags")
+            for (var i = tagsall.length - 1; i >= 0; i--){
+                var tags=tagsall[i].getElementsByTagName("a");
+                for (var j = tags.length - 1; j >= 0; j--) {
+                    var r=Math.floor(Math.random()*75+130);
+                    var g=Math.floor(Math.random()*75+100);
+                    var b=Math.floor(Math.random()*75+80);
+                    tags[j].style.background = "rgb("+r+","+g+","+b+")";
+                }
+            }
+            </script>
+          
+        </div>
+
+
+      
+
+      
+      
+      
+
+      
+
+      
+      
+    </footer>
+  </div>
+  <script type="text/javascript">
+  try {
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+  } catch (err) {
+
+  }
+  </script>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+
+    </div>
+
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      
+        <div id="gitment-container"></div>
+      
+    </div>
+
+  
+
+
+
+        </div>
+        
+        
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/family/avatar520.jpg"
+                alt="小叔乔治" />
+            
+              <p class="site-author-name" itemprop="name">小叔乔治</p>
+              <p class="site-description motion-element" itemprop="description">知识改变命运，态度决定成败。    ----小叔曰</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/tobleive" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:info@isdux.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Friendly Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://baidu.com" title="某某科技" target="_blank">某某科技</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://baidu.com" title="baidu你就知道" target="_blank">baidu你就知道</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#How-to-study-RS-整理了一些学习推荐系统的相关文献和书籍资料。"><span class="nav-number">1.</span> <span class="nav-text">How to study RS: 整理了一些学习推荐系统的相关文献和书籍资料。</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Ochuunn"><span class="nav-number"></span> <span class="nav-text">Ochuunn</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#特点"><span class="nav-number">1.</span> <span class="nav-text">特点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Demo"><span class="nav-number">2.</span> <span class="nav-text">Demo</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#⚠-这里很重要"><span class="nav-number"></span> <span class="nav-text">⚠ 这里很重要</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Install"><span class="nav-number">1.</span> <span class="nav-text">Install</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#不足"><span class="nav-number">2.</span> <span class="nav-text">不足</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">小叔乔治</span>
+
+  
+</div>
+
+
+  <div class="powered-by">智慧沉稳-大智若愚</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Perfect &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">Smile.George</a> best </div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+    
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+      
+    </div>
+    
+    
+  </div>
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+<script>
+$(document).ready(function() {
+    $(window).scrollTop(0);
+    document.documentElement.scrollTop = 0;
+});
+</script>
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+  
+  
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+<!-- LOCAL: You can save these files to your site and update links -->
+    
+        
+        <link rel="stylesheet" href="/js/src/tobelive/default-comments.css?v=5.1.4">
+        <script type="text/javascript" src="/js/src/tobelive/default-comments.js?v=5.1.4"></script>
+    
+<!-- END LOCAL -->
+
+    
+
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitment({
+            id: window.location.pathname,
+            owner: 'to-belive',
+            repo: 'to-belive.github.io',
+            
+            oauth: {
+            
+            
+                client_secret: '55c44fcb8b0d433234e9d70ad37baae6b502346a',
+            
+                client_id: '81bf59850b4f9c4ca55b'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      renderGitment();
+      
+      </script>
+    
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  <script type="text/javascript" src="/js/src/tobelive/clipboard.js"></script>
+<script type="text/javascript" src="/js/src/tobelive/customer.js"></script>
+<script type="text/javascript" src="/js/src/tobelive/wobblewindow.js"></script>
+
+
+
+  <script>
+    //只在桌面版网页启用特效
+    if( window.innerWidth > 768  ){
+      $(document).ready(function () {
+        
+          $('#header').wobbleWindow({
+            radius: 50,
+            movementTop: false,
+            movementLeft: false,
+            movementRight: false,
+            debug: false,
+          });
+        
+
+        
+          $('#sidebar').wobbleWindow({
+            radius: 50,
+            movementLeft: false,
+            movementTop: false,
+            movementBottom: false,
+            position: 'fixed',
+            debug: false,
+          });
+        
+
+        
+          $('#footer').wobbleWindow({
+            radius: 50,
+            movementBottom: false,
+            movementLeft: false,
+            movementRight: false,
+            position: 'absolute',
+            debug: false,
+          });
+        
+      });
+    }
+  </script>
+
+
+
+
+  <script type="text/javascript" src="/js/src/tobelive/print.js"></script>
+  <script>
+    POWERMODE.colorful = true;
+    POWERMODE.shake = false;
+    document.body.addEventListener('input', POWERMODE);
+  </script>
+
+
+
+<canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas>
+<script src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>
+<script type="text/javascript" src="/js/src/tobelive/cursor.js"></script>
+  
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+  
+
+  
+
+</body>
+
+</html>
