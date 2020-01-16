@@ -4,20 +4,20 @@
     <title>〆 java-base [Gradle]</title>
     <url>/2020/01/15/java-base/</url>
     <content><![CDATA[<p><strong><font color="#5A5AAD">The supreme happiness of life is the conviction that we are loved </font></strong></p>
-<h2 id="今日话题-基于gradle编译java项目告别IDE-第一节）"><a href="#今日话题-基于gradle编译java项目告别IDE-第一节）" class="headerlink" title="今日话题: 基于gradle编译java项目告别IDE(-第一节）."></a><font color="#FF5151">今日话题: </font>基于gradle编译java项目告别IDE(-第一节）.</h2><p><font style="color: #394F6A; font-size: 20px; font-family: '微软雅黑'">[主要语言] java</font></p>
+<h2 id="今日话题-基于gradle编译java项目告别IDE-第一节）"><a href="#今日话题-基于gradle编译java项目告别IDE-第一节）" class="headerlink" title="今日话题: 基于gradle编译java项目告别IDE(-第一节）"></a><font color="#FF5151">今日话题: </font>基于gradle编译java项目告别IDE(-第一节）</h2><p><font style="color: #394F6A; font-size: 20px; font-family: '微软雅黑'">[主要语言] java</font></p>
 <a id="more"></a>
 
-<h1 id="VO-DO-BO-PO-DTO-DAO-POJO"><a href="#VO-DO-BO-PO-DTO-DAO-POJO" class="headerlink" title="VO DO BO PO DTO DAO POJO"></a>VO DO BO PO DTO DAO POJO</h1><p><img src="/2020/01/15/java-base/1.jpg" alt="软件设计架构图"></p>
-<p>VO（View Object）：视图对象，用于展示层，它的作用是把某个指定页面（或组件）的所有数据封装起来。<br>DTO（Data Transfer Object）：数据传输对象，这个概念来源于J2EE的设计模式，原来的目的是为了EJB的分布式应用提供粗粒度的数据实体，以减少分布式调用的次数，从而提高分布式调用的性能和降低网络负载，但在这里，我泛指用于展示层与服务层之间的数据传输对象。<br>DO（Domain Object）：领域对象，就是从现实世界中抽象出来的有形或无形的业务实体。<br>PO（Persistent Object）：持久化对象，它跟持久层（通常是关系型数据库）的数据结构形成一一对应的映射关系，如果持久层是关系型数据库，那么，数据表中的每个字段（或若干个）就对应PO的一个（或若干个）属性。</p>
-<p>DTO和VO：DTO和VO的属性值基本是一致的，而且他们通常都是POJO，因此没必要多此一举，但不要忘记这是实现层面的思维，对于设计层面来说，概念上还是应该存在VO和DTO，因为两者有着本质的区别，DTO代表服务层需要接收的数据和返回的数据，而VO代表展示层需要显示的数据。</p>
-<p>VO一般用作展示，而不用做前端 WEB 页面调用后端的是传数据。<br>DTO 一般是前端和后端以各种方式传递数据。<br>VO与DTO的区别：当我们表示性别的时候，为了展示方便，在VO就是男、女，而在DTO当中为了实现方便传输的是1或者2这样的代码。</p>
-<p>试想一下，如果没有 VO 和 PO 的区别，那么数据库表结构的所有字段就一览无余地展示到了前端，给后台安全带来很大的隐患，并且无法在网络传输中剥离冗余信息提高了用户的带宽成本。实例以一个实例来探讨下 POJO 的使用。假设我们有一个面试系统，数据库中存储了很多面试题，通过 web 和 API 提供服务。可能会做如下的设计：数据表：表中的面试题包括编号、题目、选项、答案、创建时间、修改时间；PO：包括题目、选项、答案、创建时间、修改时间；VO：题目、选项、答案、上一题URL、下一题URL；DTO：编号、题目、选项、答案、上一题编号、下一题编号；DAO：数据库增删改查方法；BO：业务基本操作。可以看到，进行 POJO 划分后，我们得到了一个设计良好的架构，各层数据对象的修改完全可以控制在有限的范围内。</p>
-<p>PO 是 Persistant Object 的缩写，用于表示数据库中的一条记录映射成的 java 对象。PO 仅仅用于表示数据，没有任何数据操作。通常遵守 Java Bean 的规范，拥有 getter/setter 方法。</p>
-<p>DAO 是 Data Access Object 的缩写，用于表示一个数据访问对象。使用 DAO 访问数据库，包括插入、更新、删除、查询等操作，与 PO 一起使用。DAO 一般在持久层，完全封装数据库操作，对外暴露的方法使得上层应用不需要关注数据库相关的任何信息。</p>
-<p>VO 是 Value Object 的缩写，用于表示一个与前端进行交互的 java 对象。有的朋友也许有疑问，这里可不可以使用 PO 传递数据？实际上，这里的 VO 只包含前端需要展示的数据即可，对于前端不需要的数据，比如数据创建和修改的时间等字段，出于减少传输数据量大小和保护数据库结构不外泄的目的，不应该在 VO 中体现出来。通常遵守 Java Bean 的规范，拥有 getter/setter 方法。</p>
-<p>DTO 是 Data Transfer Object 的缩写，用于表示一个数据传输对象。DTO 通常用于不同服务或服务不同分层之间的数据传输。DTO 与 VO 概念相似，并且通常情况下字段也基本一致。但 DTO 与 VO 又有一些不同，这个不同主要是设计理念上的，比如 API 服务需要使用的 DTO 就可能与 VO 存在差异。通常遵守 Java Bean 的规范，拥有 getter/setter 方法。</p>
-<p>BO 是 Business Object 的缩写，用于表示一个业务对象。BO 包括了业务逻辑，常常封装了对 DAO、RPC 等的调用，可以进行 PO 与 VO/DTO 之间的转换。BO 通常位于业务层，要区别于直接对外提供服务的服务层：BO 提供了基本业务单元的基本业务操作，在设计上属于被服务层业务流程调用的对象，一个业务流程可能需要调用多个 BO 来完成。</p>
-<p>POJO 是 Plain Ordinary Java Object 的缩写，表示一个简单 java 对象。上面说的 PO、VO、DTO 都是典型的 POJO。而 DAO、BO 一般都不是 POJO，只提供一些调用方法。</p>
+<h1 id="VO-DO-BO-PO-DTO-DAO-POJO-区别与联系"><a href="#VO-DO-BO-PO-DTO-DAO-POJO-区别与联系" class="headerlink" title="VO DO BO PO DTO DAO POJO 区别与联系"></a>VO DO BO PO DTO DAO POJO 区别与联系</h1><p><strong>VO (View Object) :</strong><br>视图对象，用于展示层，它的作用是把某个指定页面（或组件）的所有数据封装起来。用于表示一个与前端进行交互的 java 对象。<br>VO一般用作展示，而不用做前端 WEB 页面调用后端的是传数据，对于前端不需要的数据，比如数据创建和修改的时间等字段，出于减少传输数据量大小和保护数据库结构不外泄的目的，不应该在 VO 中体现出来。</p>
+<p><strong>PO (Persistant Object) :</strong><br>持久化对象，它跟持久层（通常是关系型数据库）的数据结构形成一一对应的映射关系，如果持久层是关系型数据库，那么，数据表中的每个字段（或若干个）就对应PO的一个（或若干个）属性。用于表示数据库中的一条记录映射成的 java 对象。PO 仅仅用于表示数据，没有任何数据操作。通常遵守 Java Bean 的规范，拥有 getter/setter 方法。</p>
+<p><strong>DO (Domain Object) :</strong><br>领域对象，就是从现实世界中抽象出来的有形或无形的业务实体。</p>
+<p><strong>BO (Business Object) :</strong><br>用于表示一个业务对象。BO 包括了业务逻辑，常常封装了对 DAO、RPC 等的调用，可以进行 PO 与 VO/DTO 之间的转换。BO 通常位于业务层，要区别于直接对外提供服务的服务层：BO 提供了基本业务单元的基本业务操作，在设计上属于被服务层业务流程调用的对象，一个业务流程可能需要调用多个 BO 来完成。</p>
+<p><strong>DTO (Data Transfer Object) :</strong><br>表示一个数据传输对象。DTO 通常用于不同服务或服务不同分层之间的数据传输。DTO 与 VO 概念相似，并且通常情况下字段也基本一致。但 DTO 与 VO 又有一些不同，这个不同主要是设计理念上的，比如 API 服务需要使用的 DTO 就可能与 VO 存在差异。通常遵守 Java Bean 的规范，拥有 getter/setter 方法。数据传输对象，这个概念来源于J2EE的设计模式，原来的目的是为了EJB的分布式应用提供粗粒度的数据实体，以减少分布式调用的次数，从而提高分布式调用的性能和降低网络负载，但在这里，我泛指用于展示层与服务层之间的数据传输对象。一般是前端和后端以各种方式传递数据。</p>
+<p><strong>DAO (Data Access Object) :</strong><br>用于表示一个数据访问对象。使用 DAO 访问数据库，包括插入、更新、删除、查询等操作，与 PO 一起使用。DAO 一般在持久层，完全封装数据库操作，对外暴露的方法使得上层应用不需要关注数据库相关的任何信息。</p>
+<p><strong>VO 和 PO :</strong><br>如果没有 VO 和 PO 的区别，那么数据库表结构的所有字段就一览无余地展示到了前端，给后台安全带来很大的隐患，并且无法在网络传输中剥离冗余信息提高了用户的带宽成本。</p>
+<p><strong>DTO和VO :</strong><br>DTO和VO的属性值基本是一致的，而且他们通常都是POJO，因此没必要多此一举，但不要忘记这是实现层面的思维，对于设计层面来说，概念上还是应该存在VO和DTO，因为两者有着本质的区别，DTO代表服务层需要接收的数据和返回的数据，而VO代表展示层需要显示的数据。VO与DTO的区别：当我们表示性别的时候，为了展示方便，在VO就是男、女，而在DTO当中为了实现方便传输的是1或者2这样的代码。</p>
+<p><strong>POJO (Plain Ordinary Java Object) :</strong><br>POJO 是 Plain Ordinary Java Object 的缩写，表示一个简单 java 对象。上面说的 PO、VO、DTO 都是典型的 POJO。而 DAO、BO 一般都不是 POJO，只提供一些调用方法。</p>
+<h2 id="实例探讨-POJO"><a href="#实例探讨-POJO" class="headerlink" title="实例探讨 POJO"></a>实例探讨 POJO</h2><p>假设我们有一个面试系统，数据库中存储了很多面试题，通过 web 和 API 提供服务。可能会做如下的设计：数据表：表中的面试题包括编号、题目、选项、答案、创建时间、修改时间；PO：包括题目、选项、答案、创建时间、修改时间；VO：题目、选项、答案、上一题URL、下一题URL；DTO：编号、题目、选项、答案、上一题编号、下一题编号；DAO：数据库增删改查方法；BO：业务基本操作。可以看到，进行 POJO 划分后，我们得到了一个设计良好的架构，各层数据对象的修改完全可以控制在有限的范围内。</p>
+<p><img src="/2020/01/15/java-base/1.jpg" alt="软件设计架构图"></p>
 ]]></content>
       <categories>
         <category>Template</category>
