@@ -4,7 +4,7 @@
     <title>〆 VO DO BO PO DTO DAO POJO [软件架构种各个模型Model的作用与区分]</title>
     <url>/2020/01/15/java-base/</url>
     <content><![CDATA[<p><strong><font color="#5A5AAD">The supreme happiness of life is the conviction that we are loved </font></strong></p>
-<h2 id="今日话题-软件架构涉及"><a href="#今日话题-软件架构涉及" class="headerlink" title="今日话题: 软件架构涉及"></a><font color="#FF5151">今日话题: </font>软件架构涉及</h2><p><font style="color: #394F6A; font-size: 20px; font-family: '微软雅黑'">[主要内容] 软件对象中VO DO BO PO DTO DAO POJO 模型的区别与联系 </font></p>
+<h2 id="今日话题-软件架构涉及"><a href="#今日话题-软件架构涉及" class="headerlink" title="今日话题: 软件架构涉及"></a><font color="#FF5151">今日话题: </font>软件架构涉及</h2><p><font style="color: #394F6A; font-size: 20px; font-family: '微软雅黑'">[主要内容] 软件对象中 VO DO BO PO DTO DAO POJO 模型的区别与联系 </font></p>
 <a id="more"></a>
 
 <h1 id="VO-DO-BO-PO-DTO-DAO-POJO-区别与联系"><a href="#VO-DO-BO-PO-DTO-DAO-POJO-区别与联系" class="headerlink" title="VO DO BO PO DTO DAO POJO 区别与联系"></a>VO DO BO PO DTO DAO POJO 区别与联系</h1><h2 id="VO-View-Object"><a href="#VO-View-Object" class="headerlink" title="VO (View Object) :"></a><strong>VO (View Object) :</strong></h2><p>视图对象，用于展示层，它的作用是把某个指定页面（或组件）的所有数据封装起来。用于表示一个与前端进行交互的 java 对象。<br>VO一般用作展示，而不用做前端 WEB 页面调用后端的是传数据，对于前端不需要的数据，比如数据创建和修改的时间等字段，出于减少传输数据量大小和保护数据库结构不外泄的目的，不应该在 VO 中体现出来。</p>
