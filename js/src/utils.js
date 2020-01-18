@@ -81,7 +81,6 @@ NexT.utils = NexT.$u = {
         }
       }
     });
-
   },
 
   registerESCKeyEvent: function () {
