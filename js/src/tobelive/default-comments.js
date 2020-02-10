@@ -3420,11 +3420,11 @@ var Gitment = function () {
       }, options);
 
       this.state.user.isLoggingIn = true;
-      _utils.http.post('https://cors.wenjunjiang.win/?remoteUrl=https://github.com/login/oauth/access_token', {
+      _utils.http.post('https://gh-oauth.imsun.net', {
         code: code,
         client_id: client_id,
         client_secret: client_secret
-      }, '',{Accept:'application/json'}).then(function (data) {
+      }, '').then(function (data) {
         _this.accessToken = data.access_token;
         _this.update();
       }).catch(function (e) {
