@@ -661,8 +661,8 @@ $(document).ready(function() {
 <!-- LOCAL: You can save these files to your site and update links -->
     
         
-        <link rel="stylesheet" href="/js/src/tobelive/default-comments.css?v=5.1.4">
-        <script type="text/javascript" src="/js/src/tobelive/default-comments.js?v=5.1.4"></script>
+        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
+        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
     
 <!-- END LOCAL -->
 
@@ -671,15 +671,17 @@ $(document).ready(function() {
     
       <script type="text/javascript">
       function renderGitment(){
-        var gitment = new Gitment({
+        var gitment = new Gitmint({
             id: window.location.pathname,
             owner: 'to-belive',
             repo: 'to-belive.github.io',
             
+            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            
             oauth: {
             
             
-                client_secret: '55c44fcb8b0d433234e9d70ad37baae6b502346a',
+                proxy_gateway: 'https://173.230.153.139:3000',
             
                 client_id: '81bf59850b4f9c4ca55b'
             }});
